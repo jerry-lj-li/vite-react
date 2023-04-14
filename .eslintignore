@@ -1,0 +1,10 @@
+build/
+node_modules
+*.svg
+.husky
+.history
+/public
+*.md 
+.vscode
+dist
+*.css
