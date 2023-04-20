@@ -5,8 +5,7 @@ import './App.css';
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const currentTime = new Date();
-  console.log(currentTime.getTime(), 'currentTime');
+
   return (
     <div className="App">
       <div>

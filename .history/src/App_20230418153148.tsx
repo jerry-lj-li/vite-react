@@ -6,7 +6,6 @@ import './App.css';
 const App = () => {
   const [count, setCount] = useState(0);
   const currentTime = new Date();
-  console.log(currentTime.getTime(), 'currentTime');
   return (
     <div className="App">
       <div>
@@ -22,6 +21,9 @@ const App = () => {
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+        <p>
+          Edit <code>{currentTime}</code>
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
