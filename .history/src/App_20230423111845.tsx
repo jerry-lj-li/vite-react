@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { Counter } from './pages/counter/counter';
 
 const App = () => {
+  const [count, setCount] = useState(0);
   const currentTime = new Date();
   console.log(currentTime.getTime(), 'currentTime');
   return (
@@ -17,7 +18,6 @@ const App = () => {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Counter></Counter>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
   );
