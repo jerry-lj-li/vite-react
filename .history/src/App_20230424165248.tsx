@@ -2,6 +2,8 @@ import './App.css';
 import { Counter } from './pages/counter/counter';
 
 const App = () => {
+  const currentTime = new Date();
+  console.log(currentTime.getTime(), 'currentTime');
   return (
     <div className="App">
       <Counter></Counter>

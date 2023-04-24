@@ -1,23 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+//插件引入
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
-import path from 'path';
 const postcssPresetEnv = require('postcss-preset-env');
 
-// const path = require('path');
+const path = require('path');
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    postcssPresetEnv(),
-    createSvgIconsPlugin({
-      // 指定需要缓存的图标文件夹
-      iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
-      //指定symbolid 格式
-      symbolId: 'icon-[dir]-[name]',
-    }),
-  ],
+  plugins: [react(), postcssPresetEnv()],
   // 配置路径别名
   resolve: {
     alias: {
