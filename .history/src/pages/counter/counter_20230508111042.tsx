@@ -15,8 +15,6 @@ export const Counter = () => {
   };
   const arr1 = [3600, 5010, 10100, 801]; //进行倒序排序
   arr1.sort(sortArr1);
-  console.log(arr1, '倒叙');
-
   return (
     <div className="card">
       <button aria-label="Increment value" onClick={() => dispatch(increment())}>
