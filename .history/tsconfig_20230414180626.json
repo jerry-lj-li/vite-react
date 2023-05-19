@@ -24,7 +24,7 @@
     "strictNullChecks": true,
     "noResolve": false,
     "paths": {
-      "@/*": ["./src/*", ".eslintrc.js", "vite.config.ts", "babel.config.js"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src/**/*", "globals.d.ts"],
